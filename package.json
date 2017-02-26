@@ -1,0 +1,54 @@
+{
+  "name": "main-bol",
+  "version": "0.0.0",
+  "description": "The official autocomplete for Bot Of Legends",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanyGagnoon/main-bol"
+  },
+  "bugs": {
+    "url": "https://github.com/DanyGagnoon/main-bol/issues"
+  },
+  "keywords": [
+     "bol",
+     "bol-ide",
+     "official-bol",
+     "bot-of-legends",
+     "bot",
+     "of",
+     "legends",
+     "main-bol"
+  ],
+  "main": "lib/bol.js",
+  "providedServices": {
+    "autocomplete-lua.options-provider": {
+      "versions": {
+        "1.0.0": "getOptionProvider"
+      }
+    }
+  },
+  "author": "Ovior",
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "standard": "^8.3.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "__LOG__"
+    ]
+  },
+  "package-deps": [
+    "autocomplete-lua",
+    "language-lua"
+  ],
+  "dependencies": {
+    "atom-package-deps": "^4.3.1",
+    "jszip": "^3.1.3",
+    "lodash.uniq": "^4.5.0"
+  }
+}

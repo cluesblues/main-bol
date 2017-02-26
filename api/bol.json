@@ -1,0 +1,4133 @@
+{
+   "global": {
+      "type": "table",
+      "fields": {
+         "READY": {
+            "type": "undefined"
+         },
+         "NOTLEARNED": {
+            "type": "undefined"
+         },
+         "SUPRESSED": {
+            "type": "undefined"
+         },
+         "COOLDOWN": {
+            "type": "undefined"
+         },
+         "NOMANA": {
+            "type": "undefined"
+         },
+         "UNKNOWN": {
+            "type": "undefined"
+         },
+         "_Q": {
+            "type": "undefined"
+         },
+         "_W": {
+            "type": "undefined"
+         },
+         "_E": {
+            "type": "undefined"
+         },
+         "_R": {
+            "type": "undefined"
+         },
+         "SPELL_1": {
+            "type": "undefined"
+         },
+         "SPELL_2": {
+            "type": "undefined"
+         },
+         "SPELL_3": {
+            "type": "undefined"
+         },
+         "SPELL_4": {
+            "type": "undefined"
+         },
+         "ITEM_1": {
+            "type": "undefined"
+         },
+         "ITEM_2": {
+            "type": "undefined"
+         },
+         "ITEM_3": {
+            "type": "undefined"
+         },
+         "ITEM_4": {
+            "type": "undefined"
+         },
+         "ITEM_5": {
+            "type": "undefined"
+         },
+         "ITEM_6": {
+            "type": "undefined"
+         },
+         "RECALL": {
+            "type": "undefined"
+         },
+         "SUMMONER_1": {
+            "type": "undefined"
+         },
+         "SUMMONER_2": {
+            "type": "undefined"
+         },
+         "KEY_DOWN": {
+            "type": "undefined"
+         },
+         "KEY_UP": {
+            "type": "undefined"
+         },
+         "WM_MOUSEMOVE": {
+            "type": "undefined"
+         },
+         "WM_LBUTTONDOWN": {
+            "type": "undefined"
+         },
+         "WM_LBUTTONUP": {
+            "type": "undefined"
+         },
+         "WM_RBUTTONDOWN": {
+            "type": "undefined"
+         },
+         "WM_RBUTTONUP": {
+            "type": "undefined"
+         },
+         "TEAM_NONE": {
+            "type": "undefined"
+         },
+         "TEAM_BLUE": {
+            "type": "undefined"
+         },
+         "TEAM_RED": {
+            "type": "undefined"
+         },
+         "TEAM_NEUTRAL": {
+            "type": "undefined"
+         },
+         "TEAM_ENEMY": {
+            "type": "undefined"
+         },
+         "WINDOW_X": {
+            "type": "undefined"
+         },
+         "WINDOW_Y": {
+            "type": "undefined"
+         },
+         "WINDOW_W": {
+            "type": "undefined"
+         },
+         "WINDOW_H": {
+            "type": "undefined"
+         },
+         "VectorType": {
+            "type": "function",
+            "description": "Return if as vector",
+            "args": [
+               {
+                  "name": "v"
+               }
+            ]
+         },
+         "VectorIntersection": {
+            "type": "function",
+            "description": "Return the Intersection of 2 lines",
+            "args": [
+               {
+                  "name": "a1"
+               },
+               {
+                  "name": "b1"
+               },
+               {
+                  "name": "a2"
+               },
+               {
+                  "name": "b2"
+               }
+            ]
+         },
+         "IsLineSegmentIntersection": {
+            "type": "function",
+            "description": "Return if 2 linesegments intersect",
+            "args": [
+               {
+                  "name": "A"
+               },
+               {
+                  "name": "B"
+               },
+               {
+                  "name": "C"
+               },
+               {
+                  "name": "D"
+               }
+            ]
+         },
+         "LineSegmentIntersection": {
+            "type": "function",
+            "description": "Return the Intersection of 2 linesegments",
+            "args": [
+               {
+                  "name": "A"
+               },
+               {
+                  "name": "B"
+               },
+               {
+                  "name": "C"
+               },
+               {
+                  "name": "D"
+               }
+            ]
+         },
+         "VectorDirection": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "v1"
+               },
+               {
+                  "name": "v2"
+               },
+               {
+                  "name": "v"
+               }
+            ]
+         },
+         "VectorPointProjectionOnLine": {
+            "type": "function",
+            "description": "Return a vector on line v1-v2 closest to v",
+            "args": [
+               {
+                  "name": "v1"
+               },
+               {
+                  "name": "v2"
+               },
+               {
+                  "name": "v"
+               }
+            ]
+         },
+         "Vector": {
+            "type": "function",
+            "description": "Return a vector from x,y,z pos or from another vector",
+            "args": [
+               {
+                  "name": "a"
+               },
+               {
+                  "name": "b"
+               },
+               {
+                  "name": "c"
+               }
+            ],
+            "returnTypes": [
+               {
+                  "type": "ref",
+                  "name": "vector"
+               }
+            ]
+         },
+         "IsKeyPressed": {
+            "type": "function",
+            "description": "Return true/false if key was pressed",
+            "args": [
+               {
+                  "name": "key"
+               }
+            ]
+         },
+         "IsKeyDown": {
+            "type": "function",
+            "description": "Return true/false if key is down",
+            "args": [
+               {
+                  "name": "key"
+               }
+            ]
+         },
+         "CastSpell": {
+            "type": "function",
+            "description": "Uses Spell or Item.",
+            "args": [
+               {
+                  "name": "iSpell"
+               },
+               {
+                  "name": "target",
+                  "displayName": "opt-> target or (x,z)"
+               }
+            ]
+         },
+         "CastSpell2": {
+            "type": "function",
+            "description": "Cast a secondary spell",
+            "args": [
+               {
+                  "name": "iSlot"
+               },
+               {
+                  "name": "D3DXVECTOR3"
+               }
+            ]
+         },
+         "CastSpell3": {
+            "type": "function",
+            "description": "Return true/false if key was pressed",
+            "args": [
+               {
+                  "name": "iSlot"
+               },
+               {
+                  "name": "D3DXVECTOR3"
+               },
+               {
+                  "name": "D3DXVECTOR3"
+               }
+            ]
+         },
+         "LevelSpell": {
+            "type": "function",
+            "description": "Level Up a Spell",
+            "args": [
+               {
+                  "name": "iSpell"
+               }
+            ]
+         },
+         "SetSkin": {
+            "type": "function",
+            "description": "Set a current skin to a unit with a skinID.",
+            "args": [
+               {
+                  "name": "unit"
+               },
+               {
+                  "name": "skinID"
+               }
+            ]
+         },
+         "CalculatePath": {
+            "type": "function",
+            "description": "Calculate the path from unit.",
+            "args": [
+               {
+                  "name": "unit"
+               },
+               {
+                  "name": "D3DXVECTOR3"
+               }
+            ]
+         },
+         "PrintChat": {
+            "type": "function",
+            "description": "Print text to chat (local only)",
+            "args": [
+               {
+                  "name": "text"
+               }
+            ]
+         },
+         "SendChat": {
+            "type": "function",
+            "description": "Send Chat (external chat, “/” not handled)",
+            "args": [
+               {
+                  "name": "text"
+               }
+            ]
+         },
+         "BlockChat": {
+            "type": "function",
+            "description": "Block last chat message.",
+            "args": []
+         },
+         "GetTextArea": {
+            "type": "function",
+            "description": "Return the text width and height",
+            "args": [
+               {
+                  "name": "text"
+               },
+               {
+                  "name": "fontSize"
+               }
+            ]
+         },
+         "DrawText": {
+            "type": "function",
+            "description": "Draw Text over screen",
+            "args": [
+               {
+                  "name": "text"
+               },
+               {
+                  "name": "size"
+               },
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "ARGB"
+               }
+            ]
+         },
+         "DrawLine": {
+            "type": "function",
+            "description": "Draw Line over screen",
+            "args": [
+               {
+                  "name": "startX"
+               },
+               {
+                  "name": "startY"
+               },
+               {
+                  "name": "endX"
+               },
+               {
+                  "name": "endY"
+               },
+               {
+                  "name": "size"
+               },
+               {
+                  "name": "ARGB"
+               }
+            ]
+         },
+         "DrawRectangle": {
+            "type": "function",
+            "description": "Draw Rectangle over screen",
+            "args": [
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "width"
+               },
+               {
+                  "name": "height"
+               },
+               {
+                  "name": "ARGB"
+               }
+            ]
+         },
+         "DrawCircle": {
+            "type": "function",
+            "description": "Draw a circle around game object",
+            "args": [
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "z"
+               },
+               {
+                  "name": "size"
+               },
+               {
+                  "name": "RGB"
+               }
+            ]
+         },
+         "DrawRectangleOutline": {
+            "type": "function",
+            "description": "Draw a rectangle outline.",
+            "args": [
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "width"
+               },
+               {
+                  "name": "height"
+               },
+               {
+                  "name": "color"
+               },
+               {
+                  "name": "borderWidth"
+               }
+            ]
+         },
+         "DrawLineBorder3D": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "x1"
+               },
+               {
+                  "name": "y2"
+               },
+               {
+                  "name": "z1"
+               },
+               {
+                  "name": "x2"
+               },
+               {
+                  "name": "y2"
+               },
+               {
+                  "name": "z2"
+               },
+               {
+                  "name": "size"
+               },
+               {
+                  "name": "color"
+               },
+               {
+                  "name": "width"
+               }
+            ]
+         },
+         "DrawLineBorder": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "x1"
+               },
+               {
+                  "name": "y1"
+               },
+               {
+                  "name": "x2"
+               },
+               {
+                  "name": "y2"
+               },
+               {
+                  "name": "size"
+               },
+               {
+                  "name": "color"
+               },
+               {
+                  "name": "width"
+               }
+            ]
+         },
+         "DrawCircleMinimap": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "z"
+               },
+               {
+                  "name": "radius"
+               },
+               {
+                  "name": "width"
+               },
+               {
+                  "name": "color"
+               },
+               {
+                  "name": "quality"
+               }
+            ]
+         },
+         "DrawCircle2D": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "radius"
+               },
+               {
+                  "name": "width"
+               },
+               {
+                  "name": "color"
+               },
+               {
+                  "name": "quality"
+               }
+            ]
+         },
+         "DrawCircle3D": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "z"
+               },
+               {
+                  "name": "radius"
+               },
+               {
+                  "name": "width"
+               },
+               {
+                  "name": "color"
+               },
+               {
+                  "name": "quality"
+               }
+            ]
+         },
+         "DrawLine3D": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "x1"
+               },
+               {
+                  "name": "y1"
+               },
+               {
+                  "name": "z1"
+               },
+               {
+                  "name": "x2"
+               },
+               {
+                  "name": "y2"
+               },
+               {
+                  "name": "z2"
+               },
+               {
+                  "name": "width"
+               },
+               {
+                  "name": "color"
+               }
+            ]
+         },
+         "DrawLines3D": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "points"
+               },
+               {
+                  "name": "width"
+               },
+               {
+                  "name": "color"
+               }
+            ]
+         },
+         "DrawTextA": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "text"
+               },
+               {
+                  "name": "size"
+               },
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "color"
+               },
+               {
+                  "name": "halign"
+               },
+               {
+                  "name": "valign"
+               }
+            ]
+         },
+         "DrawText3D": {
+            "type": "function",
+            "description": "",
+            "args": [
+               {
+                  "name": "text"
+               },
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "z"
+               },
+               {
+                  "name": "size"
+               },
+               {
+                  "name": "color"
+               },
+               {
+                  "name": "center"
+               }
+            ]
+         },
+         "GetMyHero": {
+            "type": "function",
+            "description": "Return your Player as unit",
+            "args": [],
+            "returnTypes": [
+               {
+                  "type": "ref",
+                  "name": "unit"
+               }
+            ]
+         },
+         "GetTarget": {
+            "type": "function",
+            "description": "Return your target as unit (or nil if none)",
+            "args": [],
+            "returnTypes": [
+               {
+                  "type": "ref",
+                  "name": "unit"
+               }
+            ]
+         },
+         "GetTickCount": {
+            "type": "function",
+            "description": "Return current tick",
+            "args": []
+         },
+         "GetLatency": {
+            "type": "function",
+            "description": "Return latency",
+            "args": []
+         },
+         "GetCursorPos": {
+            "type": "function",
+            "description": "Return cursor position on the screen",
+            "args": []
+         },
+         "GetDistanceSqr": {
+            "type": "function",
+            "description": "Return the distance^2",
+            "args": [
+               {
+                  "name": "p1"
+               },
+               {
+                  "name": "p2"
+               }
+            ]
+         },
+         "GetDistance": {
+            "type": "function",
+            "description": "Return the distance",
+            "args": [
+               {
+                  "name": "p1"
+               },
+               {
+                  "name": "p2"
+               }
+            ]
+         },
+         "GetEnemyHeroes": {
+            "type": "function",
+            "description": "Return all enemy heroes in a table",
+            "args": [
+               {
+                  "name": "text"
+               }
+            ],
+            "returnTypes": [
+               {
+                  "type": "ref",
+                  "name": "unit"
+               }
+            ]
+         },
+         "GetAllyHeroes": {
+            "type": "function",
+            "description": "Return all ally heroes in a table",
+            "args": [],
+            "returnTypes": [
+               {
+                  "type": "ref",
+                  "name": "unit"
+               }
+            ]
+         },
+         "GetSave": {
+            "type": "function",
+            "description": "used to save data between matches. It can save all data except userdata, even functions !",
+            "args": [
+               {
+                  "name": "name"
+               }
+            ]
+         },
+         "CreateDirectory": {
+            "type": "function",
+            "description": "Create a directory and return true or false, only works if the folder doesn’t already exist",
+            "args": [
+               {
+                  "name": "path"
+               }
+            ]
+         },
+         "DirectoryExist": {
+            "type": "function",
+            "description": "Check if a directory exist and return true or false",
+            "args": [
+               {
+                  "name": "path"
+               }
+            ]
+         },
+         "ReadFile": {
+            "type": "function",
+            "description": "Return text of a file",
+            "args": [
+               {
+                  "name": "path"
+               }
+            ]
+         },
+         "WriteFile": {
+            "type": "function",
+            "description": "Return true if could write to file; mode is optional",
+            "args": [
+               {
+                  "name": "text"
+               },
+               {
+                  "name": "path",
+                  "displayName": "path, opt->mode"
+               }
+            ]
+         },
+         "FileExist": {
+            "type": "function",
+            "description": "Return true if file exists",
+            "args": [
+               {
+                  "name": "path"
+               }
+            ]
+         },
+         "DeleteFile": {
+            "type": "function",
+            "description": "Return true if file is succesfully deleted",
+            "args": [
+               {
+                  "name": "path"
+               }
+            ]
+         },
+         "GetFileSize": {
+            "type": "function",
+            "description": "Return the size of a file",
+            "args": [
+               {
+                  "name": "path"
+               }
+            ]
+         },
+         "DelayAction": {
+            "type": "function",
+            "description": "Delays a function call, Delay is in seconds",
+            "args": [
+               {
+                  "name": "func"
+               },
+               {
+                  "name": "delay"
+               },
+               {
+                  "name": "args"
+               }
+            ]
+         },
+         "EnableOverlay": {
+            "type": "function",
+            "description": "Enable overlay",
+            "args": []
+         },
+         "DisableOverlay": {
+            "type": "function",
+            "description": "Disable overlay",
+            "args": []
+         },
+         "CursorIsUnder": {
+            "type": "function",
+            "description": "return if cursor is under a rectangle",
+            "args": [
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "sizeX"
+               },
+               {
+                  "name": "sizeY"
+               }
+            ]
+         },
+         "createSprite": {
+            "type": "function",
+            "description": "Create a sprite object, Files are loaded from “Sprites” folder",
+            "args": [
+               {
+                  "name": "file"
+               }
+            ],
+            "returnTypes": [
+               {
+                  "type": "ref",
+                  "name": "sprite"
+               }
+            ]
+         },
+         "UpdateWindow": {
+            "type": "function",
+            "description": "updates WINDOW_[X/Y/W/H]",
+            "args": []
+         },
+         "D3DXVECTOR3": {
+            "type": "function",
+            "description": "Create a D3DXVECTOR3 object",
+            "args": [
+               {
+                  "name": "x"
+               },
+               {
+                  "name": "y"
+               },
+               {
+                  "name": "z"
+               }
+            ],
+            "returnTypes": [
+               {
+                  "type": "ref",
+                  "name": "vector"
+               }
+            ]
+         },
+         "WorldToScreen": {
+            "type": "function",
+            "description": "Return screen position based on ingame coordinates",
+            "args": [
+               {
+                  "name": "D3DXVECTOR3"
+               }
+            ]
+         },
+         "ValidTarget": {
+            "type": "function",
+            "description": "Return true if the target is valid",
+            "args": [
+               {
+                  "name": "object"
+               },
+               {
+                  "name": "distance"
+               },
+               {
+                  "name": "enemyTeam"
+               }
+            ]
+         },
+         "BuffIsValid": {
+            "type": "function",
+            "description": "Return true if the buff is valid",
+            "args": [
+               {
+                  "name": "buff"
+               }
+            ]
+         },
+         "TargetHaveBuff": {
+            "type": "function",
+            "description": "Return if target have buff",
+            "args": [
+               {
+                  "name": "buffName"
+               },
+               {
+                  "name": "target"
+               }
+            ]
+         },
+         "CountEnemyHeroInRange": {
+            "type": "function",
+            "description": "return number of enemy in range, object is optional",
+            "args": [
+               {
+                  "name": "range",
+                  "displayName": "range, opt->object"
+               }
+            ]
+         },
+         "myHero": {
+            "type": "table",
+            "fields": {
+               "HoldPosition": {
+                  "type": "function",
+                  "description": "The unit hold the current position",
+                  "args": []
+               },
+               "MoveTo": {
+                  "type": "function",
+                  "description": "The unit move to the X and Z position.",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "x"
+                     },
+                     {
+                        "name": "z"
+                     }
+                  ]
+               },
+               "Attack": {
+                  "type": "function",
+                  "description": "The unit attack the specified target",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "target"
+                     }
+                  ]
+               },
+               "GetDistance": {
+                  "type": "function",
+                  "description": "Get the distance from the unit to the target",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "target"
+                     }
+                  ]
+               },
+               "CalcDamage": {
+                  "type": "function",
+                  "description": "Calculate the damage that can be dealt to the target",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "target"
+                     },
+                     {
+                        "name": "maxDamage"
+                     }
+                  ]
+               },
+               "CalcMagicDamage": {
+                  "type": "function",
+                  "description": "Calculate the magic damage that can be dealt to the target",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "target"
+                     },
+                     {
+                        "name": "maxMagicDamage"
+                     }
+                  ]
+               },
+               "getBuff": {
+                  "type": "function",
+                  "description": "Return buff object of the specified index",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "index"
+                     }
+                  ],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "buff"
+                     }
+                  ]
+               },
+               "getInventorySlot": {
+                  "type": "function",
+                  "description": "Return item ID of the specified slot (ITEM_1 to ITEM_6)",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "slot"
+                     }
+                  ],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "item"
+                     }
+                  ]
+               },
+               "getItem": {
+                  "type": "function",
+                  "description": "Return LoLItem (ITEM_1 to ITEM_6)",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "slot"
+                     }
+                  ],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "item"
+                     }
+                  ]
+               },
+               "GetSpellData": {
+                  "type": "function",
+                  "description": "Return Spell object",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "iSpell"
+                     }
+                  ],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "spell"
+                     }
+                  ]
+               },
+               "CanUseSpell": {
+                  "type": "function",
+                  "description": "Return Spell State",
+                  "args": [
+                     {
+                        "name": "unknown"
+                     },
+                     {
+                        "name": "iSpell"
+                     }
+                  ]
+               },
+               "name": {
+                  "type": "undefined"
+               },
+               "charName": {
+                  "type": "undefined"
+               },
+               "level": {
+                  "type": "undefined"
+               },
+               "visible": {
+                  "type": "undefined"
+               },
+               "type": {
+                  "type": "undefined"
+               },
+               "x": {
+                  "type": "undefined"
+               },
+               "y": {
+                  "type": "undefined"
+               },
+               "z": {
+                  "type": "undefined"
+               },
+               "isAI": {
+                  "type": "undefined"
+               },
+               "isMe": {
+                  "type": "undefined"
+               },
+               "buffCount": {
+                  "type": "undefined"
+               },
+               "totalDamage": {
+                  "type": "undefined"
+               },
+               "dead": {
+                  "type": "undefined"
+               },
+               "team": {
+                  "type": "undefined"
+               },
+               "networkID": {
+                  "type": "undefined"
+               },
+               "health": {
+                  "type": "undefined"
+               },
+               "maxHealth": {
+                  "type": "undefined"
+               },
+               "mana": {
+                  "type": "undefined"
+               },
+               "maxMana": {
+                  "type": "undefined"
+               },
+               "bInvulnerable": {
+                  "type": "undefined"
+               },
+               "bPhysImune": {
+                  "type": "undefined"
+               },
+               "bMagicImune": {
+                  "type": "undefined"
+               },
+               "bTargetable": {
+                  "type": "undefined"
+               },
+               "bTargetableToTeam": {
+                  "type": "undefined"
+               },
+               "controlled": {
+                  "type": "undefined"
+               },
+               "cdr": {
+                  "type": "undefined"
+               },
+               "critChance": {
+                  "type": "undefined"
+               },
+               "critDmg": {
+                  "type": "undefined"
+               },
+               "hpPool": {
+                  "type": "undefined"
+               },
+               "hpRegen": {
+                  "type": "undefined"
+               },
+               "attackSpeed": {
+                  "type": "undefined"
+               },
+               "expBonus": {
+                  "type": "undefined"
+               },
+               "hardness": {
+                  "type": "undefined"
+               },
+               "lifeSteal": {
+                  "type": "undefined"
+               },
+               "spellVamp": {
+                  "type": "undefined"
+               },
+               "physReduction": {
+                  "type": "undefined"
+               },
+               "magicReduction": {
+                  "type": "undefined"
+               },
+               "armorPen": {
+                  "type": "undefined"
+               },
+               "magicPen": {
+                  "type": "undefined"
+               },
+               "armorPenPercent": {
+                  "type": "undefined"
+               },
+               "magicPenPercent": {
+                  "type": "undefined"
+               },
+               "addDamage": {
+                  "type": "undefined"
+               },
+               "ap": {
+                  "type": "undefined"
+               },
+               "damage": {
+                  "type": "undefined"
+               },
+               "armor": {
+                  "type": "undefined"
+               },
+               "magicArmor": {
+                  "type": "undefined"
+               },
+               "ms": {
+                  "type": "undefined"
+               },
+               "range": {
+                  "type": "undefined"
+               },
+               "gold": {
+                  "type": "undefined"
+               },
+               "pos": {
+                  "type": "undefined"
+               },
+               "minBBox": {
+                  "type": "undefined"
+               },
+               "maxBBox": {
+                  "type": "undefined"
+               },
+               "armorMaterial": {
+                  "type": "undefined"
+               },
+               "weaponMaterial": {
+                  "type": "undefined"
+               },
+               "deathTimer": {
+                  "type": "undefined"
+               },
+               "canAttack": {
+                  "type": "undefined"
+               },
+               "canMove": {
+                  "type": "undefined"
+               },
+               "isStealhed": {
+                  "type": "undefined"
+               },
+               "isRevealSpecificUnit": {
+                  "type": "undefined"
+               },
+               "isTaunted": {
+                  "type": "undefined"
+               },
+               "isCharmed": {
+                  "type": "undefined"
+               },
+               "isFeared": {
+                  "type": "undefined"
+               },
+               "isAsleep": {
+                  "type": "undefined"
+               },
+               "isNearSight": {
+                  "type": "undefined"
+               },
+               "isGhosted": {
+                  "type": "undefined"
+               },
+               "isNoRender": {
+                  "type": "undefined"
+               },
+               "isFleeing": {
+                  "type": "undefined"
+               },
+               "isForceRenderParticles": {
+                  "type": "undefined"
+               },
+               "spellOwner": {
+                  "type": "undefined"
+               },
+               "spellEnd": {
+                  "type": "undefined"
+               },
+               "spellStart": {
+                  "type": "undefined"
+               },
+               "spellName": {
+                  "type": "undefined"
+               }
+            }
+         },
+         "NebelwolfisOrbWalkerInit": {
+            "type": "boolean"
+         },
+         "NebelwolfisOrbWalkerLoaded": {
+            "type": "boolean"
+         },
+         "NebelwolfisOrbWalkerClass": {
+            "type": "function",
+            "description": "must be called to bind it to a already existing menu/config",
+            "args": [
+               {
+                  "name": "scriptConfigInstanceOrSubMenu"
+               }
+            ]
+         },
+         "NebelwolfisOrbWalker": {
+            "type": "table",
+            "fields": {
+               "isWindingUp": {
+                  "type": "undefined"
+               },
+               "isWindingDown": {
+                  "type": "undefined"
+               },
+               "mode": {
+                  "type": "undefined"
+               },
+               "mayAttack": {
+                  "type": "undefined"
+               },
+               "mayMove": {
+                  "type": "undefined"
+               },
+               "isHumanized": {
+                  "type": "undefined"
+               },
+               "Config": {
+                  "type": "table",
+                  "fields": {
+                     "k": {
+                        "type": "table",
+                        "fields": {
+                           "Combo": {
+                              "type": "undefined"
+                           },
+                           "Harass": {
+                              "type": "undefined"
+                           },
+                           "LastHit": {
+                              "type": "undefined"
+                           },
+                           "LaneClear": {
+                              "type": "undefined"
+                           }
+                        }
+                     }
+                  }
+               },
+               "SetAA": {
+                  "type": "function",
+                  "description": "enable(true) or disable(false) AA",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "bool"
+                     }
+                  ]
+               },
+               "SetMove": {
+                  "type": "function",
+                  "description": "enable(true) or disable(false) move",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "bool"
+                     }
+                  ]
+               },
+               "SetOrb": {
+                  "type": "function",
+                  "description": "enable(true) or disable(false) AA and move",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "bool"
+                     }
+                  ]
+               },
+               "SetTarget": {
+                  "type": "function",
+                  "description": "force target, nil to remove",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "unit"
+                     }
+                  ]
+               },
+               "ForcePos": {
+                  "type": "function",
+                  "description": "force position, nil to remove_",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "pos"
+                     }
+                  ]
+               },
+               "GetTarget": {
+                  "type": "function",
+                  "description": "returns target",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "unit"
+                     }
+                  ]
+               },
+               "TimeToAttack": {
+                  "type": "function",
+                  "description": "returns true/false depending on if you can reattack again",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "TimeToMove": {
+                  "type": "function",
+                  "description": "returns true/false depending on if you can move after AA",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "GetAttackSpeed": {
+                  "type": "function",
+                  "description": "returns real attackspeed",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "GetWindUp": {
+                  "type": "function",
+                  "description": "returns winduptime",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "RegisterWindUp": {
+                  "type": "function",
+                  "description": "deprecated, still works",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "actionFunc"
+                     },
+                     {
+                        "name": "conditionFunc"
+                     }
+                  ]
+               },
+               "AddCallback": {
+                  "type": "function",
+                  "description": "Types: BEFORE_ATTACK, ON_ATTACK, AFTER_ATTACK",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "type"
+                     },
+                     {
+                        "name": "function"
+                     }
+                  ]
+               },
+               "PredictHealth": {
+                  "type": "function",
+                  "description": "predictattacked",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "time"
+                     }
+                  ]
+               },
+               "GetDmg": {
+                  "type": "function",
+                  "description": "returns AA dmg",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "source"
+                     },
+                     {
+                        "name": "target"
+                     }
+                  ]
+               },
+               "CanOrbTarget": {
+                  "type": "function",
+                  "description": "returns true/false if target is valid and can be attacked",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "target"
+                     }
+                  ]
+               },
+               "ResetAA": {
+                  "type": "function",
+                  "description": "resets aa timer",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               }
+            }
+         },
+         "_Pewalk": {
+            "type": "table",
+            "fields": {
+               "AddPreTickCallback": {
+                  "type": "function",
+                  "description": "​Pewalk will execute these function prior to it's own tick (for advanced use only)",
+                  "args": [
+                     {
+                        "name": "function"
+                     }
+                  ]
+               },
+               "AllowAttack": {
+                  "type": "function",
+                  "description": "​Allows or disallows Pewalk from attacking",
+                  "args": [
+                     {
+                        "name": "boolean"
+                     }
+                  ]
+               },
+               "AllowMove": {
+                  "type": "function",
+                  "description": "​Allows or disallows Pewalk form moving​",
+                  "args": [
+                     {
+                        "name": "boolean"
+                     }
+                  ]
+               },
+               "BuffCheck": {
+                  "type": "function",
+                  "description": "​Returns false if unit has an invulnerability buff, if 'isAttack' is true it will also check for Shen W and Jax Counterstrike​",
+                  "args": [
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "isAttack"
+                     }
+                  ]
+               },
+               "BreakChannel": {
+                  "type": "function",
+                  "description": "​Allows Pewalk to break an active channel1​",
+                  "args": []
+               },
+               "CanAttack": {
+                  "type": "function",
+                  "description": "Returns true if Pewalk can attack, optional delay (seconds) will return if Pewalk can attack in X seconds​",
+                  "args": [
+                     {
+                        "name": "delay"
+                     }
+                  ]
+               },
+               "CanMove": {
+                  "type": "function",
+                  "description": "Returns true if Pewalk can move, optional delay (seconds) will return if Pewalk can move in X seconds​",
+                  "args": [
+                     {
+                        "name": "delay"
+                     }
+                  ]
+               },
+               "DisableSkillFarm": {
+                  "type": "function",
+                  "description": "Disables Pewalks internal skill farming for 'slot', USE THIS WITH CAUTION, THE INTERNAL CALCULATIONS EXTREMELY ACCURATE​",
+                  "args": [
+                     {
+                        "name": "slot"
+                     }
+                  ]
+               },
+               "ForceModeToPoint": {
+                  "type": "function",
+                  "description": "​Forces Pewalk to orbwalk in 'mode' to 'point', THIS WILL BYPASS KEYS",
+                  "args": [
+                     {
+                        "name": "mode"
+                     },
+                     {
+                        "name": "point"
+                     }
+                  ]
+               },
+               "ForcePoint": {
+                  "type": "function",
+                  "description": "​Forces Pewalk to orbwalk to 'point', 'target' can be set to force Pewalk to focus this unit, if 'forceNilTarget' is true Pewalk will not attack any target",
+                  "args": [
+                     {
+                        "name": "point"
+                     },
+                     {
+                        "name": "target"
+                     },
+                     {
+                        "name": "forceNilTarget"
+                     }
+                  ]
+               },
+               "ForceTarget": {
+                  "type": "function",
+                  "description": "​Forces Pewalk to focus this unit​",
+                  "args": [
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "range"
+                     }
+                  ]
+               },
+               "GetActiveMode": {
+                  "type": "function",
+                  "description": "​Returns a which mode is currently active",
+                  "args": []
+               },
+               "GetAggroCount": {
+                  "type": "function",
+                  "description": "​​Returns how many ally minions are currently attacking 'minion'",
+                  "args": [
+                     {
+                        "name": "minion"
+                     }
+                  ]
+               },
+               "GetBonusDamage": {
+                  "type": "function",
+                  "description": "​Returns current bonus damage to 'minion'​",
+                  "args": [
+                     {
+                        "name": "minion"
+                     }
+                  ]
+               },
+               "GetBuffs": {
+                  "type": "function",
+                  "description": "​​returns a table containing all buffs currently active on 'unit', THIS TABLE WILL ALSO CONTAIN MASTERY DATA",
+                  "args": [
+                     {
+                        "name": "unit"
+                     }
+                  ],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "buff"
+                     }
+                  ]
+               },
+               "GetCastPos": {
+                  "type": "function",
+                  "description": "​Returns predicted position of 'unit', spell must be a table that contains 'speed' and 'delay', THIS IS INTENDED FOR MINION USAGE ONLY​",
+                  "args": [
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "spell"
+                     }
+                  ]
+               },
+               "GetCollision": {
+                  "type": "function",
+                  "description": "​​Returns true if there is minion collision between 'from' and 'point' excluding 'unit', 'spell' must be a table that contains 'width', 'delay', and 'length', THIS IS INTENDED FOR MINION USAGE ONLY",
+                  "args": [
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "point"
+                     },
+                     {
+                        "name": "spell"
+                     },
+                     {
+                        "name": "from"
+                     }
+                  ]
+               },
+               "GetMinions": {
+                  "type": "function",
+                  "description": "​​returns a table containing all enemy and neutral minions",
+                  "args": [],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "unit"
+                     }
+                  ]
+               },
+               "GetSkillFarmTarget": {
+                  "type": "function",
+                  "description": "returns a minion that can be killed with a spell, will only return if the minion cannot be killed with an AA: ​'delay' is in seconds: ​'damage' is a function that returns the damage of the skill: 'addSavagery' is true if the Savagery mastery applies to the skill (Most single target spells): 'isSkillshot', true if the spell is a skillshot",
+                  "args": [
+                     {
+                        "name": "delay"
+                     },
+                     {
+                        "name": "damage"
+                     },
+                     {
+                        "name": "speed"
+                     },
+                     {
+                        "name": "range"
+                     },
+                     {
+                        "name": "addSavagery"
+                     },
+                     {
+                        "name": "isSkillshot"
+                     }
+                  ]
+               },
+               "GetTarget": {
+                  "type": "function",
+                  "description": "​returns a hero target if possible: 'addBoundingRadius' will add the targets boundingRadius to the range, this should be true for most target spells: ​'from' can be nil or a position: 'isAA' is true if the target is for auto attacks",
+                  "args": [
+                     {
+                        "name": "range"
+                     },
+                     {
+                        "name": "addBoundingRadius"
+                     },
+                     {
+                        "name": "from"
+                     },
+                     {
+                        "name": "isAA"
+                     }
+                  ],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "unit"
+                     }
+                  ]
+               },
+               "IsHighPriority": {
+                  "type": "function",
+                  "description": "​returns true if 'unit' is a high priority target, optional priorityValue can be set to adjust the minium priority (default is 2, 1 = highest priority, 5 = lowest priority)​",
+                  "args": [
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "priorityValue"
+                     }
+                  ]
+               },
+               "PredictMinionHealth": {
+                  "type": "function",
+                  "description": "​​returns 'minion' health after 'time' (seconds)",
+                  "args": [
+                     {
+                        "name": "minion"
+                     },
+                     {
+                        "name": "time"
+                     }
+                  ]
+               },
+               "SetRangeColor": {
+                  "type": "function",
+                  "description": "​​Sets the color of the AA range circle",
+                  "args": [
+                     {
+                        "name": "color"
+                     }
+                  ]
+               },
+               "ValidTarget": {
+                  "type": "function",
+                  "description": "returns true if the target is valid: ​'range', optional: 'addBoundingRadius', optional, true for most targeted spells: ​'from', optional, myHero is default: 'isAA', optional, true if checking validity for auto attacks",
+                  "args": [
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "range"
+                     },
+                     {
+                        "name": "addBoundingRadius"
+                     },
+                     {
+                        "name": "from"
+                     },
+                     {
+                        "name": "isAA"
+                     }
+                  ]
+               },
+               "WaitForMinion": {
+                  "type": "function",
+                  "description": "returns true if Pewalk is waiting to kill a minion in Lane Clear or Mixed Mode​",
+                  "args": []
+               }
+            }
+         },
+         "SAC": {
+            "type": "table",
+            "fields": {
+               "SetUpdateRange": {
+                  "type": "function",
+                  "description": "Set the update ranges for different SacUnit types. Explained above in SacUnit section.",
+                  "args": [
+                     {
+                        "name": "overrides",
+                        "displayName": "{overrides = x}"
+                     }
+                  ]
+               },
+               "Bind": {
+                  "type": "function",
+                  "description": "Bind callbacks",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "CallbackName"
+                     },
+                     {
+                        "name": "function(params) end",
+                        "displayName": "params"
+                     }
+                  ]
+               },
+               "Hook": {
+                  "type": "function",
+                  "description": "Hooks allow you to inject your own code into some of SAC's decision making processes and alter the result.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "CallbackName"
+                     },
+                     {
+                        "name": "function(params) end",
+                        "displayName": "params"
+                     }
+                  ]
+               },
+               "Loaded": {
+                  "type": "undefined"
+               },
+               "Authed": {
+                  "type": "undefined"
+               },
+               "DisableMovement": {
+                  "type": "function",
+                  "description": "Disables movement but allows SAC to continue to farm correctly by holding position to cancel attack aggro when necessary.",
+                  "args": []
+               },
+               "HardDisableMovement": {
+                  "type": "function",
+                  "description": "Disables movement and SAC won't manage your attack aggro. Lane clearing will suck as the game will blindly continue to attack.",
+                  "args": []
+               },
+               "EnableMovement": {
+                  "type": "function",
+                  "description": "Cancels both of the above functions, re-enabling all movement.",
+                  "args": []
+               },
+               "AttacksEnabled": {
+                  "type": "function",
+                  "description": "Enable or disable attacks",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "bool",
+                        "displayName": "true/false"
+                     }
+                  ]
+               },
+               "OrbwalkMode": {
+                  "type": "function",
+                  "description": "Disables skill farm, jungle skills and champion skills",
+                  "args": []
+               },
+               "DisableSkillFarm": {
+                  "type": "function",
+                  "description": "Disables all skill farming, including under towers",
+                  "args": []
+               },
+               "EnableSkillFarm": {
+                  "type": "function",
+                  "description": "Re-enables all skill farm",
+                  "args": []
+               },
+               "DisableJungleSkills": {
+                  "type": "function",
+                  "description": "Disables all skill use on jungle monsters",
+                  "args": []
+               },
+               "EnableJungleSkills": {
+                  "type": "function",
+                  "description": "Re-enables all skill use on jungle monsters",
+                  "args": []
+               },
+               "DisablePlayerSkills": {
+                  "type": "function",
+                  "description": "Disables casting any skills on champions",
+                  "args": []
+               },
+               "EnablePlayerSkills": {
+                  "type": "function",
+                  "description": "Re-enables casting skills on champions",
+                  "args": []
+               },
+               "ForceMode": {
+                  "type": "function",
+                  "description": "Force the given mode. Call again with nil to disable.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "mode",
+                        "displayName": "AutoCarry/MixedMode/LaneClear"
+                     }
+                  ]
+               },
+               "ChannelDetectionEnabled": {
+                  "type": "function",
+                  "description": "Enabled by default. If disabled, SAC will no longer pause while channeling.",
+                  "args": []
+               },
+               "PreferredOrbwalkPoint": {
+                  "type": "function",
+                  "description": "SAC will orbwalk to this point, but only when it was going to move anyway. Options like: <mouse over hero to stop move> can still be used by the user.",
+                  "args": []
+               },
+               "ForceOrbwalkPoint": {
+                  "type": "function",
+                  "description": "SAC will orbwalk to this point. It will ignore user preferences and will not block off-screen movement commands.",
+                  "args": []
+               },
+               "SetTSRange": {
+                  "type": "function",
+                  "description": "Set the range that SAC can search for enemies outside of orbwalk range. By default this is the highest range of SAC's supported skills for this champion.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "range"
+                     }
+                  ]
+               },
+               "SetPreferredTarget": {
+                  "type": "function",
+                  "description": "When SAC is specifically looking for a champion target, it will prioritise this target if it is in range for the actions the script wants to perform. This is the ideal function to use, as it will allow the user to still perform any action they want such as farming, target lock etc, but your target will be prioritized over any other champion when SAC is choosing a champion target.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "player"
+                     }
+                  ]
+               },
+               "ForcePreferredTarget": {
+                  "type": "function",
+                  "description": "SAC will always target this champion when it's within the range you set. This will override all other target selection and in doing so will disable farming, focus selected target, target lock and more. When the target is not within range, normal functionality resumes.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "player"
+                     },
+                     {
+                        "name": "range"
+                     }
+                  ]
+               },
+               "ForceTarget": {
+                  "type": "function",
+                  "description": "This is absolute. SAC will not target anything other than this champion no matter where they are, whether they're dead, not visible etc.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "player"
+                     }
+                  ]
+               },
+               "UnlockTarget": {
+                  "type": "function",
+                  "description": "Cancels any of the above target modifications.",
+                  "args": []
+               },
+               "GetTarget": {
+                  "type": "function",
+                  "description": "Returns a SacUnit and a reason. The reason is why this unit is targeted, and can be any of the following",
+                  "args": [],
+                  "returnTypes": [
+                     {
+                        "type": "ref",
+                        "name": "unit"
+                     }
+                  ]
+               },
+               "AnyModeActive": {
+                  "type": "function",
+                  "description": "Returns whether any mode is currently active in SAC.",
+                  "args": []
+               },
+               "GetActiveMode": {
+                  "type": "function",
+                  "description": "Returns a string for the current active mode. nil if no mode active.",
+                  "args": []
+               },
+               "CanMove": {
+                  "type": "function",
+                  "description": "Returns false when you are attacking. Same as myHero.moveReady",
+                  "args": []
+               },
+               "CanAttack": {
+                  "type": "function",
+                  "description": "Returns whether your champion can physically attack now, but does not necessarily mean that SAC will attack.",
+                  "args": []
+               },
+               "AllowedToMove": {
+                  "type": "function",
+                  "description": "Returns whether SAC is allowed to perform a movement now, including all option checks, humanizer checks etc.",
+                  "args": []
+               },
+               "AllowedToAttack": {
+                  "type": "function",
+                  "description": "Returns whether SAC is allowed to perform an attack now, including all option checks, humanizer checks etc.",
+                  "args": []
+               },
+               "SetOrbwalkPriority": {
+                  "type": "function",
+                  "description": "By default, SAC will always prioritise champions in orbwalk range. Set this to false to give priority to champions outside of orbwalk range.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "bool",
+                        "displayName": "true/false"
+                     }
+                  ]
+               },
+               "CanOrbwalkTarget": {
+                  "type": "function",
+                  "description": "Returns whether this unit can be attacked. Same as target.iCanOrbwalk for SacUnits.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "target"
+                     }
+                  ]
+               },
+               "CanOrbwalkTargetAdditionalRange": {
+                  "type": "function",
+                  "description": "Returns whether this target could be attacked if you gained x range.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "target"
+                     },
+                     {
+                        "name": "range"
+                     }
+                  ]
+               },
+               "GetLevelAdvantage": {
+                  "type": "function",
+                  "description": "Returns the level advantage for your team. Negative if you're behind.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "GetLevelAdvantageDamagePercent": {
+                  "type": "function",
+                  "description": "Returns the overall percent damage increase for this minion based on team level advantage and tower advantage in its lane. Negative if behind.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "minion"
+                     }
+                  ]
+               },
+               "GetLevelAdvantageDefenseAmount": {
+                  "type": "function",
+                  "description": "Returns the defense increase for this minion based on team level advantage and tower advantage in its lane. 0 if behind.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "minion"
+                     }
+                  ]
+               },
+               "IsKillable": {
+                  "type": "function",
+                  "description": "Returns whether the minion is killable with an auto attack and meets all requirements to be attacked (range etc).",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "minion"
+                     }
+                  ]
+               },
+               "IsAlmostKillable": {
+                  "type": "function",
+                  "description": "Returns whether the minion will very soon be killable with an auto attack, and is not very far from orbwalk range.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "minion"
+                     }
+                  ]
+               },
+               "IsValidLaneClearTarget": {
+                  "type": "function",
+                  "description": "Returns whether it's safe to attack this minion without worrying about losing the last hit. Considers auto attack damage only.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "minion"
+                     }
+                  ]
+               },
+               "CanExecuteMinion": {
+                  "type": "function",
+                  "description": "Returns whether this minion can be executed with Spoils of War (Relic shield items). Requires you to have a stack of Spoils of War.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "minion"
+                     }
+                  ]
+               },
+               "LoadPrediction": {
+                  "type": "function",
+                  "description": "Loads the chosen prediction if it's not already loaded. Predictions will always be loaded before they are used, but it's better to ensure the prediction is already loaded rather than load it when trying to cast a skill for the first time.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "predictionName"
+                     }
+                  ]
+               },
+               "GetPrediction": {
+                  "type": "function",
+                  "description": "Returns castPosition, hitChance from the selected prediction.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "predictionName"
+                     },
+                     {
+                        "name": "target"
+                     },
+                     {
+                        "name": "data"
+                     }
+                  ]
+               },
+               "UniqueChampionsKilled": {
+                  "type": "function",
+                  "description": "Returns the number of unique champions you have killed. Persistant during reloads, but SAC had to be loaded when the kill happened.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "GetSpoilStacks": {
+                  "type": "function",
+                  "description": "Returns the number of Spoils of War stacks you have, if any.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "GetGamePhase": {
+                  "type": "function",
+                  "description": "1 = Early, 2 = Mid, 3 = Late. This is a user-controlled variable. Some users won't use this feature, and game phase will always be 1.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "GetGamePhaseString": {
+                  "type": "function",
+                  "description": "Early / Mid / Late",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "GetTowerCount": {
+                  "type": "function",
+                  "description": "Returns a table. Values indicate how many towers are remaining in a given position. Example: GetTowerCount().Ally.Top",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "ValidTarget": {
+                  "type": "function",
+                  "description": "Similar to normal ValidTarget except contains some humanizer checks from user settings such as minimum time visible.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "distance"
+                     }
+                  ]
+               },
+               "ValidUnit": {
+                  "type": "function",
+                  "description": "Like ValidTarget except without checking specific targeting requirements",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "distance"
+                     }
+                  ]
+               },
+               "ValidAllyTarget": {
+                  "type": "function",
+                  "description": "Like ValidTarget but for allies",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "unit"
+                     },
+                     {
+                        "name": "distance"
+                     }
+                  ]
+               },
+               "EnemiesInRange": {
+                  "type": "function",
+                  "description": "Returns the number of enemies in range. nil range will return number of attackable enemies.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "range"
+                     }
+                  ]
+               },
+               "AlliesInRange": {
+                  "type": "function",
+                  "description": "Returns the number of allies in range. Range cannot be nil.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "range"
+                     }
+                  ]
+               },
+               "LeftMouseDown": {
+                  "type": "function",
+                  "description": "Returns whether left mouse is down",
+                  "args": [
+                     {
+                        "name": "ref"
+                     }
+                  ]
+               },
+               "PosOnScreen": {
+                  "type": "function",
+                  "description": "Returns true if the given position is on-screen. pos can be anything with x, y, z value. You can also use unit.isOnScreen with SacUnits.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "pos"
+                     }
+                  ]
+               },
+               "KeyToString": {
+                  "type": "function",
+                  "description": "Converts _Q to Q, _W to W etc.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "key"
+                     }
+                  ]
+               },
+               "RandomFloat": {
+                  "type": "function",
+                  "description": "Returns a random float between min and max.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "min"
+                     },
+                     {
+                        "name": "max"
+                     }
+                  ]
+               },
+               "GetKeyString": {
+                  "type": "function",
+                  "description": "Will attempt to return the correct name for a given key. For example GetKeyString(32) will return Space.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "key"
+                     }
+                  ]
+               },
+               "SaveForThisGame": {
+                  "type": "function",
+                  "description": "Will save data any data for this game.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "name"
+                     },
+                     {
+                        "name": "data"
+                     }
+                  ]
+               },
+               "LoadForThisGame": {
+                  "type": "function",
+                  "description": "If data has been saved for this game with this name, it will be returned. nil if no data or new game. Useful for preserving data between BoL reloads.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "name"
+                     }
+                  ]
+               },
+               "SaveForThisChamp": {
+                  "type": "function",
+                  "description": "Will save data specifically for this champion. You can use the same name on another champion to save separately for them.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "name"
+                     },
+                     {
+                        "name": "data"
+                     }
+                  ]
+               },
+               "LoadForThisChamp": {
+                  "type": "function",
+                  "description": "If data has been saved for this champion with this name, it will be returned. nil if not found.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "name"
+                     }
+                  ]
+               },
+               "SaveData": {
+                  "type": "function",
+                  "description": "Saves data under this name.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "name"
+                     },
+                     {
+                        "name": "data"
+                     }
+                  ]
+               },
+               "LoadData": {
+                  "type": "function",
+                  "description": "Loads data for the given name. nil if not found.",
+                  "args": [
+                     {
+                        "name": "ref"
+                     },
+                     {
+                        "name": "name"
+                     }
+                  ]
+               },
+               "SacUnit": {
+                  "type": "table",
+                  "fields": {
+                     "myHero": {
+                        "type": "table",
+                        "fields": {
+                           "isSacUnit": {
+                              "type": "undefined"
+                           },
+                           "isPlayer": {
+                              "type": "undefined"
+                           },
+                           "isMinion": {
+                              "type": "undefined"
+                           },
+                           "isJungle": {
+                              "type": "undefined"
+                           },
+                           "isBuilding": {
+                              "type": "undefined"
+                           },
+                           "isEnemy": {
+                              "type": "undefined"
+                           },
+                           "isAlly": {
+                              "type": "undefined"
+                           },
+                           "iCanOrbwalk": {
+                              "type": "undefined"
+                           },
+                           "distance": {
+                              "type": "undefined"
+                           },
+                           "unitGroup": {
+                              "type": "undefined"
+                           },
+                           "validTarget": {
+                              "type": "undefined"
+                           },
+                           "visibleSince": {
+                              "type": "undefined"
+                           },
+                           "hiddenSince": {
+                              "type": "undefined"
+                           },
+                           "buffs": {
+                              "type": "table",
+                              "fields": {
+                                 "Source": {
+                                    "type": "undefined"
+                                 },
+                                 "Buff": {
+                                    "type": "undefined"
+                                 },
+                                 "Stacks": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           },
+                           "isCharName": {
+                              "type": "charName"
+                           },
+                           "isShooting": {
+                              "type": "undefined"
+                           },
+                           "melee": {
+                              "type": "undefined"
+                           },
+                           "ranged": {
+                              "type": "undefined"
+                           },
+                           "manaPercent": {
+                              "type": "undefined"
+                           },
+                           "healthPercent": {
+                              "type": "undefined"
+                           },
+                           "realAP": {
+                              "type": "undefined"
+                           },
+                           "moveReady": {
+                              "type": "undefined"
+                           },
+                           "attackReady": {
+                              "type": "undefined"
+                           },
+                           "isAfterAttack": {
+                              "type": "undefined"
+                           },
+                           "isOnScreen": {
+                              "type": "undefined"
+                           },
+                           "nextAttackTime": {
+                              "type": "undefined"
+                           },
+                           "role": {
+                              "type": "undefined"
+                           },
+                           "hasMana": {
+                              "type": "undefined"
+                           },
+                           "qReady": {
+                              "type": "charName"
+                           },
+                           "wReady": {
+                              "type": "undefined"
+                           },
+                           "eReady": {
+                              "type": "undefined"
+                           },
+                           "rReady": {
+                              "type": "undefined"
+                           },
+                           "qState": {
+                              "type": "undefined"
+                           },
+                           "wState": {
+                              "type": "undefined"
+                           },
+                           "eState": {
+                              "type": "undefined"
+                           },
+                           "rState": {
+                              "type": "undefined"
+                           },
+                           "qData": {
+                              "type": "undefined"
+                           },
+                           "wData": {
+                              "type": "undefined"
+                           },
+                           "eData": {
+                              "type": "undefined"
+                           },
+                           "rData": {
+                              "type": "undefined"
+                           },
+                           "qLevel": {
+                              "type": "undefined"
+                           },
+                           "wLevel": {
+                              "type": "undefined"
+                           },
+                           "eLevel": {
+                              "type": "undefined"
+                           },
+                           "rLevel": {
+                              "type": "undefined"
+                           },
+                           "spells": {
+                              "type": "undefined"
+                           },
+                           "skillReady": {
+                              "type": "undefined"
+                           },
+                           "items": {
+                              "type": "undefined"
+                           },
+                           "attack": {
+                              "type": "table",
+                              "fields": {
+                                 "reset": {
+                                    "type": "undefined"
+                                 },
+                                 "cancelled": {
+                                    "type": "undefined"
+                                 },
+                                 "name": {
+                                    "type": "undefined"
+                                 },
+                                 "completed": {
+                                    "type": "undefined"
+                                 },
+                                 "startedAt": {
+                                    "type": "undefined"
+                                 },
+                                 "target": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           },
+                           "selectedTarget": {
+                              "type": "undefined"
+                           },
+                           "masteries": {
+                              "type": "table",
+                              "fields": {
+                                 "doubleedgesword": {
+                                    "type": "undefined"
+                                 },
+                                 "savagery": {
+                                    "type": "undefined"
+                                 },
+                                 "oppressor": {
+                                    "type": "undefined"
+                                 },
+                                 "bountyhunter": {
+                                    "type": "undefined"
+                                 },
+                                 "bountyhuntercount": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           }
+                        }
+                     },
+                     "Players": {
+                        "type": "table",
+                        "fields": {
+                           "isSacUnit": {
+                              "type": "undefined"
+                           },
+                           "isPlayer": {
+                              "type": "undefined"
+                           },
+                           "isMinion": {
+                              "type": "undefined"
+                           },
+                           "isJungle": {
+                              "type": "undefined"
+                           },
+                           "isBuilding": {
+                              "type": "undefined"
+                           },
+                           "isEnemy": {
+                              "type": "undefined"
+                           },
+                           "isAlly": {
+                              "type": "undefined"
+                           },
+                           "iCanOrbwalk": {
+                              "type": "undefined"
+                           },
+                           "distance": {
+                              "type": "undefined"
+                           },
+                           "unitGroup": {
+                              "type": "undefined"
+                           },
+                           "validTarget": {
+                              "type": "undefined"
+                           },
+                           "visibleSince": {
+                              "type": "undefined"
+                           },
+                           "hiddenSince": {
+                              "type": "undefined"
+                           },
+                           "buffs": {
+                              "type": "table",
+                              "fields": {
+                                 "Source": {
+                                    "type": "undefined"
+                                 },
+                                 "Buff": {
+                                    "type": "undefined"
+                                 },
+                                 "Stacks": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           },
+                           "isCharName": {
+                              "type": "charName"
+                           },
+                           "isShooting": {
+                              "type": "undefined"
+                           },
+                           "melee": {
+                              "type": "undefined"
+                           },
+                           "ranged": {
+                              "type": "undefined"
+                           },
+                           "manaPercent": {
+                              "type": "undefined"
+                           },
+                           "healthPercent": {
+                              "type": "undefined"
+                           },
+                           "realAP": {
+                              "type": "undefined"
+                           },
+                           "moveReady": {
+                              "type": "undefined"
+                           },
+                           "attackReady": {
+                              "type": "undefined"
+                           },
+                           "isAfterAttack": {
+                              "type": "undefined"
+                           },
+                           "isOnScreen": {
+                              "type": "undefined"
+                           },
+                           "nextAttackTime": {
+                              "type": "undefined"
+                           },
+                           "role": {
+                              "type": "undefined"
+                           },
+                           "hasMana": {
+                              "type": "undefined"
+                           },
+                           "qReady": {
+                              "type": "charName"
+                           },
+                           "wReady": {
+                              "type": "undefined"
+                           },
+                           "eReady": {
+                              "type": "undefined"
+                           },
+                           "rReady": {
+                              "type": "undefined"
+                           },
+                           "qState": {
+                              "type": "undefined"
+                           },
+                           "wState": {
+                              "type": "undefined"
+                           },
+                           "eState": {
+                              "type": "undefined"
+                           },
+                           "rState": {
+                              "type": "undefined"
+                           },
+                           "qData": {
+                              "type": "undefined"
+                           },
+                           "wData": {
+                              "type": "undefined"
+                           },
+                           "eData": {
+                              "type": "undefined"
+                           },
+                           "rData": {
+                              "type": "undefined"
+                           },
+                           "qLevel": {
+                              "type": "undefined"
+                           },
+                           "wLevel": {
+                              "type": "undefined"
+                           },
+                           "eLevel": {
+                              "type": "undefined"
+                           },
+                           "rLevel": {
+                              "type": "undefined"
+                           },
+                           "spells": {
+                              "type": "undefined"
+                           },
+                           "skillReady": {
+                              "type": "undefined"
+                           },
+                           "items": {
+                              "type": "undefined"
+                           },
+                           "attack": {
+                              "type": "table",
+                              "fields": {
+                                 "reset": {
+                                    "type": "undefined"
+                                 },
+                                 "cancelled": {
+                                    "type": "undefined"
+                                 },
+                                 "name": {
+                                    "type": "undefined"
+                                 },
+                                 "completed": {
+                                    "type": "undefined"
+                                 },
+                                 "startedAt": {
+                                    "type": "undefined"
+                                 },
+                                 "target": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           }
+                        }
+                     },
+                     "Minions": {
+                        "type": "table",
+                        "fields": {
+                           "isSacUnit": {
+                              "type": "undefined"
+                           },
+                           "isPlayer": {
+                              "type": "undefined"
+                           },
+                           "isMinion": {
+                              "type": "undefined"
+                           },
+                           "isJungle": {
+                              "type": "undefined"
+                           },
+                           "isBuilding": {
+                              "type": "undefined"
+                           },
+                           "isEnemy": {
+                              "type": "undefined"
+                           },
+                           "isAlly": {
+                              "type": "undefined"
+                           },
+                           "iCanOrbwalk": {
+                              "type": "undefined"
+                           },
+                           "distance": {
+                              "type": "undefined"
+                           },
+                           "unitGroup": {
+                              "type": "undefined"
+                           },
+                           "validTarget": {
+                              "type": "undefined"
+                           },
+                           "visibleSince": {
+                              "type": "undefined"
+                           },
+                           "hiddenSince": {
+                              "type": "undefined"
+                           },
+                           "buffs": {
+                              "type": "table",
+                              "fields": {
+                                 "Source": {
+                                    "type": "undefined"
+                                 },
+                                 "Buff": {
+                                    "type": "undefined"
+                                 },
+                                 "Stacks": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           },
+                           "iCanAlmostOrbwalk": {
+                              "type": "undefined"
+                           },
+                           "isWarrior": {
+                              "type": "undefined"
+                           },
+                           "isCaster": {
+                              "type": "undefined"
+                           },
+                           "isCannon": {
+                              "type": "undefined"
+                           },
+                           "isSuper": {
+                              "type": "undefined"
+                           },
+                           "melee": {
+                              "type": "undefined"
+                           },
+                           "ranged": {
+                              "type": "undefined"
+                           },
+                           "priority": {
+                              "type": "undefined"
+                           },
+                           "lane": {
+                              "type": "undefined"
+                           },
+                           "healthPercent": {
+                              "type": "undefined"
+                           }
+                        }
+                     },
+                     "Jungle": {
+                        "type": "table",
+                        "fields": {
+                           "isSacUnit": {
+                              "type": "undefined"
+                           },
+                           "isPlayer": {
+                              "type": "undefined"
+                           },
+                           "isMinion": {
+                              "type": "undefined"
+                           },
+                           "isJungle": {
+                              "type": "undefined"
+                           },
+                           "isBuilding": {
+                              "type": "undefined"
+                           },
+                           "isEnemy": {
+                              "type": "undefined"
+                           },
+                           "isAlly": {
+                              "type": "undefined"
+                           },
+                           "iCanOrbwalk": {
+                              "type": "undefined"
+                           },
+                           "distance": {
+                              "type": "undefined"
+                           },
+                           "unitGroup": {
+                              "type": "undefined"
+                           },
+                           "validTarget": {
+                              "type": "undefined"
+                           },
+                           "visibleSince": {
+                              "type": "undefined"
+                           },
+                           "hiddenSince": {
+                              "type": "undefined"
+                           },
+                           "buffs": {
+                              "type": "table",
+                              "fields": {
+                                 "Source": {
+                                    "type": "undefined"
+                                 },
+                                 "Buff": {
+                                    "type": "undefined"
+                                 },
+                                 "Stacks": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           },
+                           "isCharName": {
+                              "type": "charName"
+                           },
+                           "isPriority": {
+                              "type": "undefined"
+                           },
+                           "iCanAlmostOrbwalk": {
+                              "type": "undefined"
+                           }
+                        }
+                     },
+                     "Buildings": {
+                        "type": "table",
+                        "fields": {
+                           "isSacUnit": {
+                              "type": "undefined"
+                           },
+                           "isPlayer": {
+                              "type": "undefined"
+                           },
+                           "isMinion": {
+                              "type": "undefined"
+                           },
+                           "isJungle": {
+                              "type": "undefined"
+                           },
+                           "isBuilding": {
+                              "type": "undefined"
+                           },
+                           "isEnemy": {
+                              "type": "undefined"
+                           },
+                           "isAlly": {
+                              "type": "undefined"
+                           },
+                           "iCanOrbwalk": {
+                              "type": "undefined"
+                           },
+                           "distance": {
+                              "type": "undefined"
+                           },
+                           "unitGroup": {
+                              "type": "undefined"
+                           },
+                           "validTarget": {
+                              "type": "undefined"
+                           },
+                           "visibleSince": {
+                              "type": "undefined"
+                           },
+                           "hiddenSince": {
+                              "type": "undefined"
+                           },
+                           "buffs": {
+                              "type": "table",
+                              "fields": {
+                                 "Source": {
+                                    "type": "undefined"
+                                 },
+                                 "Buff": {
+                                    "type": "undefined"
+                                 },
+                                 "Stacks": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           },
+                           "isTower": {
+                              "type": "undefined"
+                           },
+                           "isInhib": {
+                              "type": "undefined"
+                           },
+                           "isNexus": {
+                              "type": "undefined"
+                           },
+                           "towerInfo": {
+                              "type": "table",
+                              "fields": {
+                                 "lane": {
+                                    "type": "undefined"
+                                 },
+                                 "type": {
+                                    "type": "undefined"
+                                 },
+                                 "team": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           }
+                        }
+                     },
+                     "Others": {
+                        "type": "table",
+                        "fields": {
+                           "isSacUnit": {
+                              "type": "undefined"
+                           },
+                           "isPlayer": {
+                              "type": "undefined"
+                           },
+                           "isMinion": {
+                              "type": "undefined"
+                           },
+                           "isJungle": {
+                              "type": "undefined"
+                           },
+                           "isBuilding": {
+                              "type": "undefined"
+                           },
+                           "isEnemy": {
+                              "type": "undefined"
+                           },
+                           "isAlly": {
+                              "type": "undefined"
+                           },
+                           "iCanOrbwalk": {
+                              "type": "undefined"
+                           },
+                           "distance": {
+                              "type": "undefined"
+                           },
+                           "unitGroup": {
+                              "type": "undefined"
+                           },
+                           "validTarget": {
+                              "type": "undefined"
+                           },
+                           "visibleSince": {
+                              "type": "undefined"
+                           },
+                           "hiddenSince": {
+                              "type": "undefined"
+                           },
+                           "buffs": {
+                              "type": "table",
+                              "fields": {
+                                 "Source": {
+                                    "type": "undefined"
+                                 },
+                                 "Buff": {
+                                    "type": "undefined"
+                                 },
+                                 "Stacks": {
+                                    "type": "undefined"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         },
+         "VPrediction": {
+            "type": "function",
+            "description": "Initialize a table of type VPrediction",
+            "args": [],
+            "returnTypes": [
+               {
+                  "type": "ref",
+                  "name": "unit"
+               }
+            ]
+         }
+      }
+   },
+   "namedTypes": {
+      "buff": {
+         "type": "table",
+         "fields": {
+            "name": {
+               "type": "undefined"
+            },
+            "startT": {
+               "type": "undefined"
+            },
+            "endT": {
+               "type": "undefined"
+            },
+            "valid": {
+               "type": "undefined"
+            }
+         }
+      },
+      "item": {
+         "type": "table",
+         "fields": {
+            "name": {
+               "type": "undefined"
+            },
+            "id": {
+               "type": "undefined"
+            },
+            "stacks": {
+               "type": "undefined"
+            }
+         }
+      },
+      "spell": {
+         "type": "table",
+         "fields": {
+            "name": {
+               "type": "undefined"
+            },
+            "level": {
+               "type": "undefined"
+            },
+            "mana": {
+               "type": "undefined"
+            },
+            "cd": {
+               "type": "undefined"
+            },
+            "currentCd": {
+               "type": "undefined"
+            },
+            "range": {
+               "type": "undefined"
+            },
+            "channelDuration": {
+               "type": "undefined"
+            },
+            "startPos": {
+               "type": "undefined"
+            },
+            "endPos": {
+               "type": "undefined"
+            }
+         }
+      },
+      "sprite": {
+         "type": "table",
+         "fields": {
+            "width": {
+               "type": "string"
+            },
+            "height": {
+               "type": "string"
+            },
+            "Draw": {
+               "type": "function",
+               "description": "Draw the sprite",
+               "args": [
+                  {
+                     "name": "x"
+                  },
+                  {
+                     "name": "y"
+                  },
+                  {
+                     "name": "alpha"
+                  }
+               ]
+            },
+            "Release": {
+               "type": "function",
+               "description": "Release the sprite",
+               "args": []
+            },
+            "SetScale": {
+               "type": "function",
+               "description": "Scale the sprite",
+               "args": [
+                  {
+                     "name": "x"
+                  },
+                  {
+                     "name": "y"
+                  }
+               ]
+            },
+            "DrawEx": {
+               "type": "function",
+               "description": "DrawEx",
+               "args": [
+                  {
+                     "name": "srcRect"
+                  },
+                  {
+                     "name": "pCenter"
+                  },
+                  {
+                     "name": "pPosition"
+                  },
+                  {
+                     "name": "Alpha"
+                  }
+               ]
+            }
+         }
+      },
+      "unit": {
+         "type": "table",
+         "fields": {
+            "HoldPosition": {
+               "type": "function",
+               "description": "The unit hold the current position",
+               "args": []
+            },
+            "MoveTo": {
+               "type": "function",
+               "description": "The unit move to the X and Z position.",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "x"
+                  },
+                  {
+                     "name": "z"
+                  }
+               ]
+            },
+            "Attack": {
+               "type": "function",
+               "description": "The unit attack the specified target",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "target"
+                  }
+               ]
+            },
+            "GetDistance": {
+               "type": "function",
+               "description": "Get the distance from the unit to the target",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "target"
+                  }
+               ]
+            },
+            "CalcDamage": {
+               "type": "function",
+               "description": "Calculate the damage that can be dealt to the target",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "target"
+                  },
+                  {
+                     "name": "maxDamage"
+                  }
+               ]
+            },
+            "CalcMagicDamage": {
+               "type": "function",
+               "description": "Calculate the magic damage that can be dealt to the target",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "target"
+                  },
+                  {
+                     "name": "maxMagicDamage"
+                  }
+               ]
+            },
+            "getBuff": {
+               "type": "function",
+               "description": "Return buff object of the specified index",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "index"
+                  }
+               ],
+               "returnTypes": [
+                  {
+                     "type": "ref",
+                     "name": "buff"
+                  }
+               ]
+            },
+            "getInventorySlot": {
+               "type": "function",
+               "description": "Return item ID of the specified slot (ITEM_1 to ITEM_6)",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "slot"
+                  }
+               ],
+               "returnTypes": [
+                  {
+                     "type": "ref",
+                     "name": "item"
+                  }
+               ]
+            },
+            "getItem": {
+               "type": "function",
+               "description": "Return LoLItem (ITEM_1 to ITEM_6)",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "slot"
+                  }
+               ],
+               "returnTypes": [
+                  {
+                     "type": "ref",
+                     "name": "item"
+                  }
+               ]
+            },
+            "GetSpellData": {
+               "type": "function",
+               "description": "Return Spell object",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "iSpell"
+                  }
+               ],
+               "returnTypes": [
+                  {
+                     "type": "ref",
+                     "name": "spell"
+                  }
+               ]
+            },
+            "CanUseSpell": {
+               "type": "function",
+               "description": "Return Spell State",
+               "args": [
+                  {
+                     "name": "unknown"
+                  },
+                  {
+                     "name": "iSpell"
+                  }
+               ]
+            },
+            "name": {
+               "type": "string"
+            },
+            "charName": {
+               "type": "string"
+            },
+            "level": {
+               "type": "number"
+            },
+            "visible": {
+               "type": "boolean"
+            },
+            "type": {
+               "type": "undefined"
+            },
+            "x": {
+               "type": "number"
+            },
+            "y": {
+               "type": "number"
+            },
+            "z": {
+               "type": "number"
+            },
+            "isAI": {
+               "type": "boolean"
+            },
+            "isMe": {
+               "type": "boolean"
+            },
+            "buffCount": {
+               "type": "number"
+            },
+            "totalDamage": {
+               "type": "number"
+            },
+            "dead": {
+               "type": "boolean"
+            },
+            "team": {
+               "type": "team"
+            },
+            "networkID": {
+               "type": "number"
+            },
+            "health": {
+               "type": "number"
+            },
+            "maxHealth": {
+               "type": "number"
+            },
+            "mana": {
+               "type": "number"
+            },
+            "maxMana": {
+               "type": "number"
+            },
+            "bInvulnerable": {
+               "type": "boolean"
+            },
+            "bPhysImune": {
+               "type": "boolean"
+            },
+            "bMagicImune": {
+               "type": "boolean"
+            },
+            "bTargetable": {
+               "type": "boolean"
+            },
+            "bTargetableToTeam": {
+               "type": "boolean"
+            },
+            "controlled": {
+               "type": "undefined"
+            },
+            "cdr": {
+               "type": "number"
+            },
+            "critChance": {
+               "type": "number"
+            },
+            "critDmg": {
+               "type": "number"
+            },
+            "hpPool": {
+               "type": "number"
+            },
+            "hpRegen": {
+               "type": "number"
+            },
+            "attackSpeed": {
+               "type": "number"
+            },
+            "expBonus": {
+               "type": "number"
+            },
+            "hardness": {
+               "type": "number"
+            },
+            "lifeSteal": {
+               "type": "number"
+            },
+            "spellVamp": {
+               "type": "number"
+            },
+            "physReduction": {
+               "type": "number"
+            },
+            "magicReduction": {
+               "type": "number"
+            },
+            "armorPen": {
+               "type": "number"
+            },
+            "magicPen": {
+               "type": "number"
+            },
+            "armorPenPercent": {
+               "type": "number"
+            },
+            "magicPenPercent": {
+               "type": "number"
+            },
+            "addDamage": {
+               "type": "number"
+            },
+            "ap": {
+               "type": "number"
+            },
+            "damage": {
+               "type": "number"
+            },
+            "armor": {
+               "type": "number"
+            },
+            "magicArmor": {
+               "type": "number"
+            },
+            "ms": {
+               "type": "number"
+            },
+            "range": {
+               "type": "number"
+            },
+            "gold": {
+               "type": "number"
+            },
+            "pos": {
+               "type": "number"
+            },
+            "minBBox": {
+               "type": "number"
+            },
+            "maxBBox": {
+               "type": "number"
+            },
+            "armorMaterial": {
+               "type": "number"
+            },
+            "weaponMaterial": {
+               "type": "number"
+            },
+            "deathTimer": {
+               "type": "number"
+            },
+            "canAttack": {
+               "type": "boolean"
+            },
+            "canMove": {
+               "type": "boolean"
+            },
+            "isStealhed": {
+               "type": "boolean"
+            },
+            "isRevealSpecificUnit": {
+               "type": "boolean"
+            },
+            "isTaunted": {
+               "type": "boolean"
+            },
+            "isCharmed": {
+               "type": "boolean"
+            },
+            "isFeared": {
+               "type": "boolean"
+            },
+            "isAsleep": {
+               "type": "boolean"
+            },
+            "isNearSight": {
+               "type": "boolean"
+            },
+            "isGhosted": {
+               "type": "boolean"
+            },
+            "isNoRender": {
+               "type": "boolean"
+            },
+            "isFleeing": {
+               "type": "boolean"
+            },
+            "isForceRenderParticles": {
+               "type": "boolean"
+            },
+            "spellOwner": {
+               "type": "string"
+            },
+            "spellEnd": {
+               "type": "number"
+            },
+            "spellStart": {
+               "type": "number"
+            },
+            "spellName": {
+               "type": "string"
+            }
+         }
+      },
+      "vector": {
+         "type": "table",
+         "fields": {
+            "clone": {
+               "type": "function",
+               "description": "Return a new Vector from vector",
+               "args": []
+            },
+            "unpack": {
+               "type": "function",
+               "description": "Unpack vector",
+               "args": []
+            },
+            "len2": {
+               "type": "function",
+               "description": "Return vector^2",
+               "args": [
+                  {
+                     "displayName": "opt->v"
+                  }
+               ]
+            },
+            "len": {
+               "type": "function",
+               "description": "Return vector length",
+               "args": []
+            },
+            "dist": {
+               "type": "function",
+               "description": "distance between 2 vectors (v and vector)",
+               "args": [
+                  {
+                     "name": "v"
+                  }
+               ]
+            },
+            "normalize": {
+               "type": "function",
+               "description": "Normalize vector",
+               "args": []
+            },
+            "normalized": {
+               "type": "function",
+               "description": "return a new Vector normalize from vector",
+               "args": []
+            },
+            "rotate": {
+               "type": "function",
+               "description": "Rotate the vector by phi angle",
+               "args": [
+                  {
+                     "name": "phiX"
+                  },
+                  {
+                     "name": "phiY"
+                  },
+                  {
+                     "name": "phiZ"
+                  }
+               ]
+            },
+            "rotated": {
+               "type": "function",
+               "description": "Return a new Vector rotate from vector by phi angle",
+               "args": [
+                  {
+                     "name": "phiX"
+                  },
+                  {
+                     "name": "phiY"
+                  },
+                  {
+                     "name": "phiZ"
+                  }
+               ]
+            },
+            "projectOn": {
+               "type": "function",
+               "description": "Return a new Vector from vector projected on v",
+               "args": [
+                  {
+                     "name": "v"
+                  }
+               ]
+            },
+            "mirrorOn": {
+               "type": "function",
+               "description": "Return a new Vector from vector mirrored on v",
+               "args": [
+                  {
+                     "name": "v"
+                  }
+               ]
+            },
+            "center": {
+               "type": "function",
+               "description": "Return center between vector and v",
+               "args": [
+                  {
+                     "name": "v"
+                  }
+               ]
+            },
+            "crossP": {
+               "type": "function",
+               "description": "Return cross product of vector",
+               "args": []
+            },
+            "dotP": {
+               "type": "function",
+               "description": "Return dot product of vector",
+               "args": []
+            },
+            "polar": {
+               "type": "function",
+               "description": "Return the angle from axe",
+               "args": []
+            },
+            "angleBetween": {
+               "type": "function",
+               "description": "Return the angle formed from vector to v1,v2",
+               "args": [
+                  {
+                     "name": "v1"
+                  },
+                  {
+                     "name": "v2"
+                  }
+               ]
+            },
+            "compare": {
+               "type": "function",
+               "description": "Compare vector and v",
+               "args": [
+                  {
+                     "name": "v"
+                  }
+               ]
+            },
+            "perpendicular": {
+               "type": "function",
+               "description": "Return new Vector rotated 90° right",
+               "args": []
+            },
+            "perpendicular2": {
+               "type": "function",
+               "description": "Return new Vector rotated 90° left",
+               "args": []
+            }
+         }
+      },
+      "vp": {
+         "type": "table",
+         "fields": {
+            "GetPredictedHealth": {
+               "type": "function",
+               "description": "Get the unit predicted health: Health",
+               "args": [
+                  {
+                     "name": "unit"
+                  },
+                  {
+                     "name": "time"
+                  },
+                  {
+                     "name": "delay"
+                  }
+               ]
+            },
+            "GetCircularCastPosition": {
+               "type": "function",
+               "description": "Get a circular spell cast position: CastPostion, Hitchance",
+               "args": [
+                  {
+                     "name": "unit"
+                  },
+                  {
+                     "name": "delay"
+                  },
+                  {
+                     "name": "radius"
+                  },
+                  {
+                     "name": "range"
+                  },
+                  {
+                     "name": "speed"
+                  },
+                  {
+                     "name": "from"
+                  },
+                  {
+                     "name": "collision"
+                  }
+               ]
+            },
+            "GetLineCastPosition": {
+               "type": "function",
+               "description": "Get a line skill shot cast position: CastPosition, Hitchance",
+               "args": [
+                  {
+                     "name": "unit"
+                  },
+                  {
+                     "name": "delay"
+                  },
+                  {
+                     "name": "radius"
+                  },
+                  {
+                     "name": "range"
+                  },
+                  {
+                     "name": "speed"
+                  },
+                  {
+                     "name": "from"
+                  },
+                  {
+                     "name": "collision"
+                  },
+                  {
+                     "name": "dmg"
+                  }
+               ]
+            },
+            "GetPredictedPos": {
+               "type": "function",
+               "description": "Get the predicted position of the unit: CastPosition, Hitchance",
+               "args": [
+                  {
+                     "name": "unit"
+                  },
+                  {
+                     "name": "delay"
+                  },
+                  {
+                     "name": "speed"
+                  },
+                  {
+                     "name": "from"
+                  },
+                  {
+                     "name": "collision"
+                  }
+               ]
+            },
+            "GetCircularAOECastPosition": {
+               "type": "function",
+               "description": "Get a circular aoe skill shot cast position: mainCastPosition, mainHitChance, points, mainPosition",
+               "args": [
+                  {
+                     "name": "unit"
+                  },
+                  {
+                     "name": "delay"
+                  },
+                  {
+                     "name": "radius"
+                  },
+                  {
+                     "name": "range"
+                  },
+                  {
+                     "name": "speed"
+                  },
+                  {
+                     "name": "from"
+                  },
+                  {
+                     "name": "collision"
+                  }
+               ]
+            },
+            "GetLineAOECastPosition": {
+               "type": "function",
+               "description": "Get a line aoe skill shot cast position: mainCastPosition, mainHitChance, MaxHit, Positions",
+               "args": [
+                  {
+                     "name": "unit"
+                  },
+                  {
+                     "name": "delay"
+                  },
+                  {
+                     "name": "radius"
+                  },
+                  {
+                     "name": "range"
+                  },
+                  {
+                     "name": "speed"
+                  },
+                  {
+                     "name": "from"
+                  }
+               ]
+            },
+            "GetConeAOECastPosition": {
+               "type": "function",
+               "description": "Get a cone aoe skill shot cast position: mainCastPosition, mainHitChance, maxHit",
+               "args": [
+                  {
+                     "name": "unit"
+                  },
+                  {
+                     "name": "delay"
+                  },
+                  {
+                     "name": "angle"
+                  },
+                  {
+                     "name": "range"
+                  },
+                  {
+                     "name": "speed"
+                  },
+                  {
+                     "name": "from"
+                  }
+               ]
+            },
+            "DrawSavedWaypoints": {
+               "type": "function",
+               "description": "Draw the saved waypoints",
+               "args": [
+                  {
+                     "name": "object"
+                  },
+                  {
+                     "name": "time"
+                  },
+                  {
+                     "name": "color"
+                  },
+                  {
+                     "name": "drawPoints"
+                  }
+               ]
+            }
+         }
+      }
+   }
+}

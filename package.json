@@ -1,6 +1,6 @@
 {
   "name": "main-bol",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The official autocomplete for Bot Of Legends",
   "repository": {
     "type": "git",
@@ -10,14 +10,14 @@
     "url": "https://github.com/DanyGagnoon/main-bol/issues"
   },
   "keywords": [
-     "bol",
-     "bol-ide",
-     "official-bol",
-     "bot-of-legends",
-     "bot",
-     "of",
-     "legends",
-     "main-bol"
+    "bol",
+    "bol-ide",
+    "official-bol",
+    "bot-of-legends",
+    "bot",
+    "of",
+    "legends",
+    "main-bol"
   ],
   "main": "lib/bol.js",
   "providedServices": {

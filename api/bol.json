@@ -725,7 +725,7 @@
             "returnTypes": [
                {
                   "type": "ref",
-                  "name": "unit"
+                  "name": "target"
                }
             ]
          },
@@ -779,7 +779,7 @@
             "returnTypes": [
                {
                   "type": "ref",
-                  "name": "unit"
+                  "name": "target"
                }
             ]
          },
@@ -790,7 +790,7 @@
             "returnTypes": [
                {
                   "type": "ref",
-                  "name": "unit"
+                  "name": "target"
                }
             ]
          },
@@ -1490,7 +1490,7 @@
                         "name": "ref"
                      },
                      {
-                        "name": "unit"
+                        "name": "target"
                      }
                   ]
                },
@@ -1517,7 +1517,7 @@
                   "returnTypes": [
                      {
                         "type": "ref",
-                        "name": "unit"
+                        "name": "target"
                      }
                   ]
                },
@@ -1828,7 +1828,7 @@
                   "returnTypes": [
                      {
                         "type": "ref",
-                        "name": "unit"
+                        "name": "target"
                      }
                   ]
                },
@@ -1876,7 +1876,7 @@
                   "returnTypes": [
                      {
                         "type": "ref",
-                        "name": "unit"
+                        "name": "target"
                      }
                   ]
                },
@@ -2146,7 +2146,7 @@
                   "returnTypes": [
                      {
                         "type": "ref",
-                        "name": "unit"
+                        "name": "target"
                      }
                   ]
                },
@@ -3277,7 +3277,7 @@
             "returnTypes": [
                {
                   "type": "ref",
-                  "name": "unit"
+                  "name": "vp"
                }
             ]
          }
@@ -3405,6 +3405,227 @@
                      "name": "Alpha"
                   }
                ]
+            }
+         }
+      },
+      "target": {
+         "type": "table",
+         "fields": {
+            "name": {
+               "type": "string"
+            },
+            "charName": {
+               "type": "string"
+            },
+            "level": {
+               "type": "number"
+            },
+            "visible": {
+               "type": "boolean"
+            },
+            "type": {
+               "type": "undefined"
+            },
+            "x": {
+               "type": "number"
+            },
+            "y": {
+               "type": "number"
+            },
+            "z": {
+               "type": "number"
+            },
+            "isAI": {
+               "type": "boolean"
+            },
+            "isMe": {
+               "type": "boolean"
+            },
+            "buffCount": {
+               "type": "number"
+            },
+            "totalDamage": {
+               "type": "number"
+            },
+            "dead": {
+               "type": "boolean"
+            },
+            "team": {
+               "type": "team"
+            },
+            "networkID": {
+               "type": "number"
+            },
+            "health": {
+               "type": "number"
+            },
+            "maxHealth": {
+               "type": "number"
+            },
+            "mana": {
+               "type": "number"
+            },
+            "maxMana": {
+               "type": "number"
+            },
+            "bInvulnerable": {
+               "type": "boolean"
+            },
+            "bPhysImune": {
+               "type": "boolean"
+            },
+            "bMagicImune": {
+               "type": "boolean"
+            },
+            "bTargetable": {
+               "type": "boolean"
+            },
+            "bTargetableToTeam": {
+               "type": "boolean"
+            },
+            "controlled": {
+               "type": "undefined"
+            },
+            "cdr": {
+               "type": "number"
+            },
+            "critChance": {
+               "type": "number"
+            },
+            "critDmg": {
+               "type": "number"
+            },
+            "hpPool": {
+               "type": "number"
+            },
+            "hpRegen": {
+               "type": "number"
+            },
+            "attackSpeed": {
+               "type": "number"
+            },
+            "expBonus": {
+               "type": "number"
+            },
+            "hardness": {
+               "type": "number"
+            },
+            "lifeSteal": {
+               "type": "number"
+            },
+            "spellVamp": {
+               "type": "number"
+            },
+            "physReduction": {
+               "type": "number"
+            },
+            "magicReduction": {
+               "type": "number"
+            },
+            "armorPen": {
+               "type": "number"
+            },
+            "magicPen": {
+               "type": "number"
+            },
+            "armorPenPercent": {
+               "type": "number"
+            },
+            "magicPenPercent": {
+               "type": "number"
+            },
+            "addDamage": {
+               "type": "number"
+            },
+            "ap": {
+               "type": "number"
+            },
+            "damage": {
+               "type": "number"
+            },
+            "armor": {
+               "type": "number"
+            },
+            "magicArmor": {
+               "type": "number"
+            },
+            "ms": {
+               "type": "number"
+            },
+            "range": {
+               "type": "number"
+            },
+            "gold": {
+               "type": "number"
+            },
+            "pos": {
+               "type": "number"
+            },
+            "minBBox": {
+               "type": "number"
+            },
+            "maxBBox": {
+               "type": "number"
+            },
+            "armorMaterial": {
+               "type": "number"
+            },
+            "weaponMaterial": {
+               "type": "number"
+            },
+            "deathTimer": {
+               "type": "number"
+            },
+            "canAttack": {
+               "type": "boolean"
+            },
+            "canMove": {
+               "type": "boolean"
+            },
+            "isStealhed": {
+               "type": "boolean"
+            },
+            "isRevealSpecificUnit": {
+               "type": "boolean"
+            },
+            "isTaunted": {
+               "type": "boolean"
+            },
+            "isCharmed": {
+               "type": "boolean"
+            },
+            "isFeared": {
+               "type": "boolean"
+            },
+            "isAsleep": {
+               "type": "boolean"
+            },
+            "isNearSight": {
+               "type": "boolean"
+            },
+            "isGhosted": {
+               "type": "boolean"
+            },
+            "isNoRender": {
+               "type": "boolean"
+            },
+            "isFleeing": {
+               "type": "boolean"
+            },
+            "isForceRenderParticles": {
+               "type": "boolean"
+            },
+            "spellOwner": {
+               "type": "string"
+            },
+            "spellEnd": {
+               "type": "number"
+            },
+            "spellStart": {
+               "type": "number"
+            },
+            "spellName": {
+               "type": "string"
             }
          }
       },

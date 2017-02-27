@@ -43,8 +43,7 @@
     ]
   },
   "package-deps": [
-    "autocomplete-lua",
-    "language-lua"
+    "autocomplete-lua"
   ],
   "dependencies": {
     "atom-package-deps": "^4.3.1",

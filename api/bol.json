@@ -2,122 +2,401 @@
    "global": {
       "type": "table",
       "fields": {
+         
          "READY": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "NOTLEARNED": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "SUPRESSED": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "COOLDOWN": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "NOMANA": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "UNKNOWN": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "_Q": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "_W": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "_E": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "_R": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "SPELL_1": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "SPELL_2": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "SPELL_3": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "SPELL_4": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "ITEM_1": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "ITEM_2": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "ITEM_3": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "ITEM_4": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "ITEM_5": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "ITEM_6": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "RECALL": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "SUMMONER_1": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "SUMMONER_2": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "KEY_DOWN": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "KEY_UP": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WM_MOUSEMOVE": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WM_LBUTTONDOWN": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WM_LBUTTONUP": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WM_RBUTTONDOWN": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WM_RBUTTONUP": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "TEAM_NONE": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "TEAM_BLUE": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "TEAM_RED": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "TEAM_NEUTRAL": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "TEAM_ENEMY": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WINDOW_X": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WINDOW_Y": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WINDOW_W": {
-            "type": "undefined"
+            "type": "unknown"
          },
          "WINDOW_H": {
-            "type": "undefined"
+            "type": "unknown"
+         },
+
+         "OnLoad": {
+            "type": "unknown"
+         },
+         "OnUnload": {
+            "type": "unknown"
+         },
+         "OnDraw": {
+            "type": "unknown"
+         },
+         "OnReset": {
+            "type": "unknown"
+         },
+         "OnTick": {
+            "type": "unknown"
+         },
+         "OnCreateObj": {
+            "type": "unknown"
+         },
+         "OnDeleteObj": {
+            "type": "unknown"
+         },
+         "OnWndMsg": {
+            "type": "unknown"
+         },
+         "OnProcessSpell": {
+            "type": "unknown"
+         },
+         "OnSendChat": {
+            "type": "unknown"
+         },
+         "OnRecvChat": {
+            "type": "unknown"
+         },
+         "OnSendPacket": {
+            "type": "unknown"
+         },
+         "OnRecvPacket": {
+            "type": "unknown"
+         },
+         "OnBugSplat": {
+            "type": "unknown"
+         },
+         "OnAnimation": {
+            "type": "unknown"
+         },
+         "OnApplyParticle": {
+            "type": "unknown"
+         },
+         "OnNotifyEvent": {
+            "type": "unknown"
+         },
+         "OnNewPath": {
+            "type": "unknown"
+         },
+         "OnIssueOrder": {
+            "type": "unknown"
+         },
+         "OnCastSpell": {
+            "type": "unknown"
+         },
+         "OnApplyBuff": {
+            "type": "unknown"
+         },
+         "OnUpdateBuff": {
+            "type": "unknown"
+         },
+         "OnRemoveBuff": {
+            "type": "unknown"
+         },
+
+         "AddLoadCallback": {
+            "type": "function",
+            "description": "Creates a callback when a script is loaded in to the game.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddUnLoadCallback": {
+            "type": "function",
+            "description": "Creates a callback when the script is unloaded from the game.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddDrawCallback": {
+            "type": "function",
+            "description": "Creates a callback every tick for drawing purpose.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddResetCallback": {
+            "type": "function",
+            "description": "Creates a callback when draw reset.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddTickCallback": {
+            "type": "function",
+            "description": "Creates a callback every game tick.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddCreateObjCallback": {
+            "type": "function",
+            "description": "Creates a callback when an object is created.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddDeleteObjCallback": {
+            "type": "function",
+            "description": "Creates a callback when an object is deleted.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddWndMsgCallback": {
+            "type": "function",
+            "description": "Creates a callback when the user use the mouse or the keyboard.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddProcessSpellCallback": {
+            "type": "function",
+            "description": "Creates a callback when a spell is casted.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddSendChatCallback": {
+            "type": "function",
+            "description": "Creates a callback when user send text to the chat.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddRecvChatCallback": {
+            "type": "function",
+            "description": "Creates a callback when user send recv chat.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddSendPacketCallback": {
+            "type": "function",
+            "description": "Creates a callback when user send a packet",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddRecvPacketCallback": {
+            "type": "function",
+            "description": "Creates a callback when user recv a packet",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddBugSplatCallback": {
+            "type": "function",
+            "description": "Creates a callback when user bugsplat",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddAnimationCallback": {
+            "type": "function",
+            "description": "Creates a callback when a unit does an animation",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddApplyParticleCallback": {
+            "type": "function",
+            "description": "Creates a callback when a particle apply to a unit",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddNotifyEventCallback": {
+            "type": "function",
+            "description": "Creates a callback on event",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddNewPathCallback": {
+            "type": "function",
+            "description": "Creates a callback on new path",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddIssueOrderCallback": {
+            "type": "function",
+            "description": "Creates a callback on IssueOrder",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddCastSpellCallback": {
+            "type": "function",
+            "description": "Creates a callback when a spell is casted.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddApplyBuffCallback": {
+            "type": "function",
+            "description": "Creates a callback when a buff gets applied on myHero.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddUpdateBuffCallback": {
+            "type": "function",
+            "description": "Creates a callback when a buff gets updated on myHero.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
+         },
+         "AddRemoveBuffCallback": {
+            "type": "function",
+            "description": "Creates a callback when a buff gets removed on myHero.",
+            "args": [
+               {
+                  "name": "func"
+               }
+            ]
          },
          "VectorType": {
             "type": "function",
@@ -1171,220 +1450,220 @@
                   ]
                },
                "name": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "charName": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "level": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "visible": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "type": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "x": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "y": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "z": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isAI": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isMe": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "buffCount": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "totalDamage": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "dead": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "team": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "networkID": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "health": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "maxHealth": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "mana": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "maxMana": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "bInvulnerable": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "bPhysImune": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "bMagicImune": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "bTargetable": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "bTargetableToTeam": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "controlled": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "cdr": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "critChance": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "critDmg": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "hpPool": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "hpRegen": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "attackSpeed": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "expBonus": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "hardness": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "lifeSteal": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "spellVamp": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "physReduction": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "magicReduction": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "armorPen": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "magicPen": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "armorPenPercent": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "magicPenPercent": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "addDamage": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "ap": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "damage": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "armor": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "magicArmor": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "ms": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "range": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "gold": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "pos": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "minBBox": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "maxBBox": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "armorMaterial": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "weaponMaterial": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "deathTimer": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "canAttack": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "canMove": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isStealhed": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isRevealSpecificUnit": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isTaunted": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isCharmed": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isFeared": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isAsleep": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isNearSight": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isGhosted": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isNoRender": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isFleeing": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isForceRenderParticles": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "spellOwner": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "spellEnd": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "spellStart": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "spellName": {
-                  "type": "undefined"
+                  "type": "unknown"
                }
             }
          },
@@ -1407,22 +1686,22 @@
             "type": "table",
             "fields": {
                "isWindingUp": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isWindingDown": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "mode": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "mayAttack": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "mayMove": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "isHumanized": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "Config": {
                   "type": "table",
@@ -1431,16 +1710,16 @@
                         "type": "table",
                         "fields": {
                            "Combo": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "Harass": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "LastHit": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "LaneClear": {
-                              "type": "undefined"
+                              "type": "unknown"
                            }
                         }
                      }
@@ -1987,10 +2266,10 @@
                   ]
                },
                "Loaded": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "Authed": {
-                  "type": "undefined"
+                  "type": "unknown"
                },
                "DisableMovement": {
                   "type": "function",
@@ -2593,55 +2872,55 @@
                         "type": "table",
                         "fields": {
                            "isSacUnit": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isPlayer": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isMinion": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isJungle": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isBuilding": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isEnemy": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isAlly": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "iCanOrbwalk": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "distance": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "unitGroup": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "validTarget": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "visibleSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "hiddenSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "buffs": {
                               "type": "table",
                               "fields": {
                                  "Source": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Buff": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Stacks": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            },
@@ -2649,144 +2928,144 @@
                               "type": "charName"
                            },
                            "isShooting": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "melee": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "ranged": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "manaPercent": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "healthPercent": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "realAP": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "moveReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "attackReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isAfterAttack": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isOnScreen": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "nextAttackTime": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "role": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "hasMana": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "qReady": {
                               "type": "charName"
                            },
                            "wReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "eReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "rReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "qState": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "wState": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "eState": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "rState": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "qData": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "wData": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "eData": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "rData": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "qLevel": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "wLevel": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "eLevel": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "rLevel": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "spells": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "skillReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "items": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "attack": {
                               "type": "table",
                               "fields": {
                                  "reset": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "cancelled": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "name": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "completed": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "startedAt": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "target": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            },
                            "selectedTarget": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "masteries": {
                               "type": "table",
                               "fields": {
                                  "doubleedgesword": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "savagery": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "oppressor": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "bountyhunter": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "bountyhuntercount": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            }
@@ -2796,55 +3075,55 @@
                         "type": "table",
                         "fields": {
                            "isSacUnit": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isPlayer": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isMinion": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isJungle": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isBuilding": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isEnemy": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isAlly": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "iCanOrbwalk": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "distance": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "unitGroup": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "validTarget": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "visibleSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "hiddenSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "buffs": {
                               "type": "table",
                               "fields": {
                                  "Source": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Buff": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Stacks": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            },
@@ -2852,121 +3131,121 @@
                               "type": "charName"
                            },
                            "isShooting": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "melee": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "ranged": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "manaPercent": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "healthPercent": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "realAP": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "moveReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "attackReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isAfterAttack": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isOnScreen": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "nextAttackTime": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "role": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "hasMana": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "qReady": {
                               "type": "charName"
                            },
                            "wReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "eReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "rReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "qState": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "wState": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "eState": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "rState": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "qData": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "wData": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "eData": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "rData": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "qLevel": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "wLevel": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "eLevel": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "rLevel": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "spells": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "skillReady": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "items": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "attack": {
                               "type": "table",
                               "fields": {
                                  "reset": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "cancelled": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "name": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "completed": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "startedAt": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "target": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            }
@@ -2976,87 +3255,87 @@
                         "type": "table",
                         "fields": {
                            "isSacUnit": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isPlayer": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isMinion": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isJungle": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isBuilding": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isEnemy": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isAlly": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "iCanOrbwalk": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "distance": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "unitGroup": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "validTarget": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "visibleSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "hiddenSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "buffs": {
                               "type": "table",
                               "fields": {
                                  "Source": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Buff": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Stacks": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            },
                            "iCanAlmostOrbwalk": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isWarrior": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isCaster": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isCannon": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isSuper": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "melee": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "ranged": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "priority": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "lane": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "healthPercent": {
-                              "type": "undefined"
+                              "type": "unknown"
                            }
                         }
                      },
@@ -3064,55 +3343,55 @@
                         "type": "table",
                         "fields": {
                            "isSacUnit": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isPlayer": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isMinion": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isJungle": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isBuilding": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isEnemy": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isAlly": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "iCanOrbwalk": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "distance": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "unitGroup": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "validTarget": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "visibleSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "hiddenSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "buffs": {
                               "type": "table",
                               "fields": {
                                  "Source": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Buff": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Stacks": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            },
@@ -3120,10 +3399,10 @@
                               "type": "charName"
                            },
                            "isPriority": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "iCanAlmostOrbwalk": {
-                              "type": "undefined"
+                              "type": "unknown"
                            }
                         }
                      },
@@ -3131,78 +3410,78 @@
                         "type": "table",
                         "fields": {
                            "isSacUnit": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isPlayer": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isMinion": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isJungle": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isBuilding": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isEnemy": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isAlly": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "iCanOrbwalk": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "distance": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "unitGroup": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "validTarget": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "visibleSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "hiddenSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "buffs": {
                               "type": "table",
                               "fields": {
                                  "Source": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Buff": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Stacks": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            },
                            "isTower": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isInhib": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isNexus": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "towerInfo": {
                               "type": "table",
                               "fields": {
                                  "lane": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "type": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "team": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            }
@@ -3212,55 +3491,55 @@
                         "type": "table",
                         "fields": {
                            "isSacUnit": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isPlayer": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isMinion": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isJungle": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isBuilding": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isEnemy": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "isAlly": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "iCanOrbwalk": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "distance": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "unitGroup": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "validTarget": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "visibleSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "hiddenSince": {
-                              "type": "undefined"
+                              "type": "unknown"
                            },
                            "buffs": {
                               "type": "table",
                               "fields": {
                                  "Source": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Buff": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  },
                                  "Stacks": {
-                                    "type": "undefined"
+                                    "type": "unknown"
                                  }
                               }
                            }
@@ -3288,16 +3567,16 @@
          "type": "table",
          "fields": {
             "name": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "startT": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "endT": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "valid": {
-               "type": "undefined"
+               "type": "unknown"
             }
          }
       },
@@ -3305,13 +3584,13 @@
          "type": "table",
          "fields": {
             "name": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "id": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "stacks": {
-               "type": "undefined"
+               "type": "unknown"
             }
          }
       },
@@ -3319,31 +3598,31 @@
          "type": "table",
          "fields": {
             "name": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "level": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "mana": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "cd": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "currentCd": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "range": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "channelDuration": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "startPos": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "endPos": {
-               "type": "undefined"
+               "type": "unknown"
             }
          }
       },
@@ -3424,7 +3703,7 @@
                "type": "boolean"
             },
             "type": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "x": {
                "type": "number"
@@ -3484,7 +3763,7 @@
                "type": "boolean"
             },
             "controlled": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "cdr": {
                "type": "number"
@@ -3803,7 +4082,7 @@
                "type": "boolean"
             },
             "type": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "x": {
                "type": "number"
@@ -3863,7 +4142,7 @@
                "type": "boolean"
             },
             "controlled": {
-               "type": "undefined"
+               "type": "unknown"
             },
             "cdr": {
                "type": "number"

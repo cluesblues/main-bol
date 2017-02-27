@@ -1,0 +1,13 @@
+'.source.lua':
+  'multiline comment':
+    'prefix': '-['
+    'body': '--[[ ${0:comment...}]'
+  'nested multiline comment':
+    'prefix': '=['
+    'body': '--[=[ ${0:comment...}]='
+  'function':
+    'prefix': '-f'
+    'body': 'function ${1:FunctionName}\n\t$0\nend'
+  'class function':
+    'prefix': '-cf'
+    'body': 'function ${1:ClassName}:${2:FunctionName}\n\t$0\nend'
